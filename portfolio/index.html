@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1d6fc10029.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header"> 
+      
+        <div class="container"> 
+             
+            <nav>
+                <img src="" class=""> 
+                  
+                <ul id="sidemenu">
+                
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <!---<li><a href="#">Portfolio</a></li>  -->
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+           
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+             
+                <h1> I'm <br><span> Ranjeet</span> Kumar Verma</h1>
+                <p>frontend Web Developer and programmer</p>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------- -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="profile1.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi I'm <b> Ranjeet Kumar Verma</b>, a 4th year student in Bachelor of Technology(BTech.) specializing in <b> Computer Science and Information Technology</b> at <b> KIET Group of Institutions Ghaziabad</b>, Uttar Pradesh</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')" >Skills</p>
+                        <p class="tab-links" onclick="opentab('internships')">Internships</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>                  
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Frontend Web Development</span><br>HTML, CSS, JavaScript,React js</li>
+                            <li><span>Programming Languages</span><br>C,C++,Python</li>
+                            <li><span>Data Structures and Algorithms</span><br>C++ Programming Language</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="internships">
+                        <ul>
+                            <li><span>cissco Networking Academy</span><br>CPA: Programming Essentials in C++</li>
+                           
+                            <li><span>frontend web development</span><br>IIPC cell of KIET Group of Institutions Ghaziabad</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTech</span><br>Aggregate SGPA : 7.92 <br>Branch- Computer science and Information Technology at<br>KIET Group of Institutions Ghaziabad, U.P.</li>
+                            <li><span>Intermediate</span> <br>Aggregate Percentage:85%  (UP BOARD)<br>Sita Inter College Mahmudabad, Sitapur</li>
+                            <li><span>HighSchool</span> <br>Aggregate Percentage:92.85% (UP BOARD)<br>Sita Inter College Mahmudabad, Sitapur</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------services           -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Projects </h1>
+        <div class="services-list">
+            <div> 
+                <i class="fa-solid fa-code"></i>
+                <h2>Helpy</h2>
+                <p>It is help to faculties to store and manages the records of student's(date of birth, address,subjects,marks and grades ) </p>
+              <p>Technology used- HTML,CSS,JavaScript,PHP,MYSQL(DataBase)</p>
+                <a href="#">learm more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>ParkIn</h2>
+                <p>It is used to manage incoming and outgoing vehicles and its parking fare.</p>
+                <a href="#">learm more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fugit provident incidunt cum, quia veniam nostrum.</p>
+                <a href="#">learm more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----------contact---------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-titles">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>ranjeetkv12@gmail.com</p>
+                <p><i class="fas fa-phone"></i>+91-6392824997</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ranjeet_kverma/"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.facebook.com/ranjeet.kumarverma.3701"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/ranjeet-kumar-verma-b28127204/"><i class="fa-brands fa-linkedin"></i></a>
+                   <br>
+           
+                    <a href="ranjeetresume .pdf" download class="btn btn2 btn3">Download CV</a>
+            </div>
+         </div>
+
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg">Message send succesfully!</span>
+            </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright <i class="fa-sharp fa-regular fa-copyright"></i> 2023 all right reserved ! this template is made with ❤</p>
+        </div>
+    </div>
+</div>
+
+<!---------javascript-->
+<script>
+    var tablinks =document.getElementsByClassName("tab-links");
+    
+    var tabcontents =document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks)
+        {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents)
+        {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+        
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+        
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz8L_jhVMSXuYhoYYVLETXtwB6Jqarz8pr1o5Lf0VJ3WiYylpmRbw5DO35JFFUmDrE/exec'
+    const form = document.forms['submit-to-google-sheet']
+   const msg=document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>  {
+            msg.innerHTML="Message sent succesfully"
+            setTimeout(function(){
+                msg.innerHTML= ""
+            },500)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
